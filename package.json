@@ -7,7 +7,8 @@
     "clean": "rimraf build && rimraf bundle",
     "test": "npm run lint && npm run test:unit",
     "test:unit": "jest",
-    "lint": "eslint . --ext \".js,.jsx,.ts,.tsx\" --fix --format pretty && prettier \"**/*.{css,scss,md,json}\" --write"
+    "lint": "npx eslint . --ext \".js,.jsx,.ts,.tsx\" --fix --format pretty",
+    "format": "npx prettier \"**/*.{css,scss,md,json,yml}\" --write"
   },
   "husky": {
     "hooks": {
