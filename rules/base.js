@@ -1,3 +1,4 @@
+// TODO: add 'operator-assignment' rule
 module.exports = {
   rules: {
     /**
@@ -7,6 +8,24 @@ module.exports = {
      */
     // printWidth
     'max-len':     [ 'warn', 120, { ignoreComments: true }],
+    'key-spacing': [
+      'error', {
+        singleLine: {
+          beforeColon: false,
+          afterColon:  true,
+        },
+        multiLine: {
+          beforeColon: false,
+          afterColon:  true,
+        },
+        align: {
+          beforeColon: false,
+          afterColon:  true,
+          mode:        'minimum',
+          on:          'value',
+        },
+      },
+    ],
     'keyword-spacing': [
       'error', {
         before: true,
