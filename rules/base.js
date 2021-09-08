@@ -7,6 +7,12 @@ module.exports = {
      */
     // printWidth
     'max-len':     [ 'warn', 120, { ignoreComments: true }],
+    'keyword-spacing': [
+      'error', {
+        before: true,
+        after:  true,
+      },
+    ],
     'no-implicit-globals': [ 'error', { lexicalBindings: false }],
     indent:                [
       'error',
