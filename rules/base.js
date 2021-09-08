@@ -96,50 +96,20 @@ module.exports = {
     'no-multiple-empty-lines': [
       'error', { max: 2, maxEOF: 1 },
     ],
-    'no-multi-spaces': [
-      'error', {
-        exceptions: {
-          VariableDeclarator:   true,
-          ImportDeclaration:    true,
-          AssignmentExpression: true,
-          ClassProperty:        true,
-        },
+    'no-multi-spaces': [ 'error', {
+      exceptions: {
+        VariableDeclarator:   true,
+        ImportDeclaration:    true,
+        AssignmentExpression: true,
+        ClassProperty:        true,
       },
+    },
     ],
-    'one-var':     0, // disabled due to team preferences
-    // [
-    // 'error',
-    // {
-    //   'const':            'never',
-    //   'var':              'consecutive',
-    //   let:              'consecutive',
-    //   separateRequires: true,
-    // },
-    // ],
-    'key-spacing': [
-      'error', {
-        singleLine: {
-          beforeColon: false,
-          afterColon:  true,
-        },
-        multiLine: {
-          beforeColon: false,
-          afterColon:  true,
-        },
-        align: {
-          beforeColon: false,
-          afterColon:  true,
-          mode:        'minimum',
-          on:          'value',
-        },
-      },
-    ],
-    'keyword-spacing': [
-      'error', {
-        before: true,
-        after:  true,
-      },
-    ],
-    'no-implicit-globals': [ 'error', { lexicalBindings: false }],
+    'one-var': [ 'error', {
+      'const':          'never',
+      'var':            'consecutive',
+      let:              'consecutive',
+      separateRequires: true,
+    }],
   },
 }
