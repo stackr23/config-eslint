@@ -6,15 +6,14 @@ module.exports = {
      * otherwise you'll see eslint re-formating prettier changes
      */
     // printWidth
-    'max-len': [ 'warn', 120, { ignoreComments: true }],
-    indent:    [
+    indent:                [
       'error',
       2,
       {
         VariableDeclarator: {
-          'var':   1,
-          let:     1,
-          'const': 1,
+          'var':   2,
+          let:     2,
+          'const': 4,
         },
         SwitchCase:     1,
         ignoreComments: false,
