@@ -6,6 +6,7 @@ module.exports = {
      * otherwise you'll see eslint re-formating prettier changes
      */
     // printWidth
+    'max-len':     [ 'warn', 120, { ignoreComments: true }],
     indent:                [
       'error',
       2,
