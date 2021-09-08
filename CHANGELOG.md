@@ -2,6 +2,35 @@
 
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
+
+
+## [2.0.1](https://github.com/stackr23/config-eslint/compare/v2.0.0...v2.0.1) (2021-09-08)
+
+
+### :wrench: Configs
+
+* **ci:** remove circleCI config ([578a4c3](https://github.com/stackr23/config-eslint/commit/578a4c3606515eb0bc150a9278f3a0b6c69b1745))
+* **ci:** remove travis config ([6d2800c](https://github.com/stackr23/config-eslint/commit/6d2800cb52219f1749aa38d3fb49e87d28d37bef))
+* **CI:** add 'semantic-release' config ([f3c4adf](https://github.com/stackr23/config-eslint/commit/f3c4adf2bbad7da859b8e0d044f1f7cba06cf378))
+* **CI:** remove circleCI config ([7031383](https://github.com/stackr23/config-eslint/commit/703138362f66f6b9ac649e4947c4893cbea19ea4))
+* **gh-action:** add 'semantic-release' workflow ([a5ec8a1](https://github.com/stackr23/config-eslint/commit/a5ec8a1e30c61fec9a979a8c456f25cd65419228))
+* **npm:** move `prettier` to 'format' script ([5fbb246](https://github.com/stackr23/config-eslint/commit/5fbb2464018ce43a88992fa534f5e7b6766b5581))
+* **rules:** add 'key-spacing' rules ([43ce88e](https://github.com/stackr23/config-eslint/commit/43ce88e234a63e07b49d3f433cdc914719794a83))
+* **rules:** add 'keyword-spacing' (before and after) ([8fa577f](https://github.com/stackr23/config-eslint/commit/8fa577f5fc11eeae8a507e0ec4d51a4ac82e37ba))
+* **rules:** add 'max-len' warning ([38b8e6c](https://github.com/stackr23/config-eslint/commit/38b8e6c7ef74219c8103f7dc1de2b8765e17d519))
+* **rules:** add 'no-implicit-globals' ([9b04a44](https://github.com/stackr23/config-eslint/commit/9b04a44cf6c57a58b3917d7742fb26d5ea7d3e0a))
+* **rules:** add 'one-var' settings ([9f330a6](https://github.com/stackr23/config-eslint/commit/9f330a617bae1c36f46c2797bd2983b60115378e))
+* **rules:** allow JSX in `.ts?` files ([f99d269](https://github.com/stackr23/config-eslint/commit/f99d269cc872b0aa0660f148a47379be163ae447))
+* **rules:** change `indent` for variables declarations ([8fa11bc](https://github.com/stackr23/config-eslint/commit/8fa11bc4d3310b60abbaa1ff7f9bfd317ff6fff5))
+* **rules:** changed some basic rules ([4a9afef](https://github.com/stackr23/config-eslint/commit/4a9afef384245a42eb16b72c99932678c35b8200))
+* **vsCode:** remove setting to use global user setting ([9017b79](https://github.com/stackr23/config-eslint/commit/9017b798436609599fbb3493c15814af8ca0ed5c))
+* **vsCode:** remove setting to use global user setting ([fa075f2](https://github.com/stackr23/config-eslint/commit/fa075f292585f8f227f5962695f7bf3aeb6568e8))
+
+
+### :package: Dependencies
+
+* upgrade all dependencies and remove unused ([#2](https://github.com/stackr23/config-eslint/issues/2)) ([1a6f9ad](https://github.com/stackr23/config-eslint/commit/1a6f9ad8a3151fc1366fc66cfafa22ef66e604b4))
+
 # 2.0.0 (2021-05-14)
 
 ### Bug Fixes
