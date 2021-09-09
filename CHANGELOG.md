@@ -4,6 +4,19 @@
 
 
 
+## [2.0.2](https://github.com/stackr23/config-eslint/compare/v2.0.1...v2.0.2) (2021-09-09)
+
+
+### :beetle: Bug Fixes
+
+* **tsconfigRootDir:** use `process.cwd()` as function ([142924c](https://github.com/stackr23/config-eslint/commit/142924c6a582d759f1008faad75af0dd08fdb10f))
+
+
+### :wrench: Configs
+
+* **rules:** `allowSeparatedGroups` in `sort-import` ([8b3656c](https://github.com/stackr23/config-eslint/commit/8b3656cef4daee3c027faffd9dd2bfb48766ce48))
+* set `settings.react.version: 'detect'` ([30d01cc](https://github.com/stackr23/config-eslint/commit/30d01cc1c03793668afe5730a5babdde28d96f11))
+
 ## [2.0.1](https://github.com/stackr23/config-eslint/compare/v2.0.0...v2.0.1) (2021-09-08)
 
 
