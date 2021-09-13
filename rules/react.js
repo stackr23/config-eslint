@@ -32,7 +32,7 @@ module.exports = {
     'react/no-will-update-set-state':             [ 'error' ],
     'react/prefer-read-only-props':               [ 'error' ],
     'react/prop-types':                           [ 'error' ],
-    'react/require-default-props':                [ 'error' ],
+    'react/require-default-props':                [ 'warn' ],
     'react/require-render-return':                [ 'error' ],
     'react/self-closing-comp':                    [ 'error' ],
     'react/sort-comp':                            [ 'error' ],
@@ -50,33 +50,21 @@ module.exports = {
     'react/jsx-indent':                           [ 'error', 2 ],
     'react/jsx-indent-props':                     [ 'error', 2 ],
     'react/jsx-key':                              [ 'error' ],
-    'react/jsx-max-depth':                        [ 'error', { max: 5 }],
-    'react/jsx-no-bind':                          [ 'error' ],
+    'react/jsx-max-depth':                        [ 'warn', { max: 5 }],
+    'react/jsx-no-bind':                          [ 'warn' ],
     'react/jsx-no-comment-textnodes':             [ 'error' ],
     'react/jsx-no-duplicate-props':               [ 'error' ],
     'react/jsx-no-target-blank':                  [ 'error' ],
     'react/jsx-no-undef':                         [ 'error' ],
     'react/jsx-one-expression-per-line':          0,
-    'react/jsx-curly-brace-presence':             [
-      'error',
-      {
-        props:    'ignore',
-        children: 'ignore',
-      },
-    ],
-    'react/jsx-pascal-case':           [ 'error' ],
-    'react/jsx-props-no-multi-spaces': [ 'error' ],
-    'react/jsx-sort-default-props':    0,
-    'react/jsx-sort-props':            0,
-    'react/jsx-tag-spacing':           [
-      'error',
-      {
-        closingSlash:      'never',
-        beforeSelfClosing: 'always',
-        afterOpening:      'never',
-        beforeClosing:     'never',
-      },
-    ],
+    'react/jsx-curly-brace-presence':             [ 'error', { props: 'ignore', children: 'ignore' }],
+    'react/jsx-pascal-case':                      [ 'error' ],
+    'react/jsx-props-no-multi-spaces':            [ 'error' ],
+    'react/jsx-sort-default-props':               0,
+    'react/jsx-sort-props':                       0,
+    'react/jsx-tag-spacing':                      [ 'error', {
+      closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never', beforeClosing: 'never',
+    }],
     'react/jsx-uses-react':      [ 'error' ],
     'react/jsx-uses-vars':       [ 'error' ],
     'react/jsx-wrap-multilines': [
@@ -120,15 +108,5 @@ module.exports = {
     // Definition for rule 'react/jsx-props-no-multi-spaces' was not found.eslint(react/jsx-props-no-multi-spaces)
     // Definition for rule 'react/jsx-props-no-spreading' was not found.eslint(react/jsx-props-no-spreading)
     // Definition for rule 'react/jsx-curly-newline' was not found.eslint(react/jsx-curly-newline)
-
-    // OVERWRITES
-    'no-use-before-define': [
-      'error',
-      {
-        functions: true,
-        classes:   true,
-        variables: true,
-      },
-    ],
   },
 }

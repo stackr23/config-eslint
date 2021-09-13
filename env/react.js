@@ -8,7 +8,7 @@ module.exports = {
     node:    true,
     browser: false,
   },
-  parser:        'babel-eslint',
+  parser:        '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion:  2020,
     sourceType:   'module',
@@ -42,12 +42,6 @@ module.exports = {
         tsconfigRootDir: process.cwd(),
         project:         './tsconfig.json',
       },
-      plugins:   [ '@typescript-eslint' ],
-      'extends': [
-        'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/eslint-recommended',
-        'plugin:@typescript-eslint/recommended',
-      ],
       settings: {
         'import/parsers': {
           '@typescript-eslint/parser': [ '.ts', '.tsx' ],
@@ -60,11 +54,13 @@ module.exports = {
           },
         },
       },
-      rules: {
-        '@typescript-eslint/no-use-before-define': 0,
-        '@typescript-eslint/ban-ts-ignore':        [ 'warn' ],
-        '@typescript-eslint/camelcase':            [ 'warn' ],
-      },
+      plugins:   [ '@typescript-eslint' ],
+      'extends': [
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+        require.resolve('../rules/typescript'),
+      ],
+      rules: { },
     },
   ],
   ignorePatterns: [ 'build/**/*', '**/*.html.esj' ],
