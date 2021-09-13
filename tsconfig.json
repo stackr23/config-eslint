@@ -10,7 +10,11 @@
     "lib": ["es5", "es6", "dom"],
     "esModuleInterop": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "./env/*": ["./env/*"],
+      "./rules/*": ["./rules/*"],
+      "./utils/*": ["./utils/*"]
+    }
   },
   "awesomeTypescriptLoaderOptions": {}
 }
