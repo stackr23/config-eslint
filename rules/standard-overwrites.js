@@ -51,5 +51,6 @@ module.exports = {
     ],
     // 'standard/no-callback-literal': 0,
     'no-return-await': [ 'warn' ],
+    'no-var-requires': 0,
   },
 }

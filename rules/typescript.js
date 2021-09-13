@@ -12,5 +12,6 @@ module.exports = {
       classes:              false,
       variables:            true,
     }],
+    '@typescript-eslint/no-var-requires': [ 'error' ],
   },
 }
