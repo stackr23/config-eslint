@@ -21,9 +21,8 @@ module.exports = {
   settings: {
     engines: { node: '>=12.0.0' },
     react:   {
+      version:     'detect',
       createClass: 'createReactClass',
-      version:     '16.0.9',
-      flowVersion: '0.53',
     },
     'import/resolver': {
       node:    false,
@@ -40,7 +39,7 @@ module.exports = {
       files:         [ '*.ts', '*.tsx' ],
       parser:        '@typescript-eslint/parser',
       parserOptions: {
-        tsconfigRootDir: process.cwd,
+        tsconfigRootDir: process.cwd(),
         project:         './tsconfig.json',
       },
       plugins:   [ '@typescript-eslint' ],

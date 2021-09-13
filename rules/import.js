@@ -45,6 +45,7 @@ module.exports = {
         ignoreDeclarationSort: true,
         ignoreMemberSort:      true,
         memberSyntaxSortOrder: [ 'single', 'all', 'multiple', 'none' ],
+        allowSeparatedGroups:  true,
       },
     ],
   },
