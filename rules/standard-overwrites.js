@@ -23,7 +23,14 @@ module.exports = {
         varsIgnorePattern:  'React|styles|cx',
       },
     ],
-
+    'no-use-before-define': [
+      'warn',
+      {
+        functions: false,
+        classes:   false,
+        variables: true,
+      },
+    ],
     'no-unused-expressions': [
       'error',
       {
