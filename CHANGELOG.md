@@ -4,6 +4,22 @@
 
 
 
+## [2.0.3](https://github.com/stackr23/config-eslint/compare/v2.0.2...v2.0.3) (2021-09-13)
+
+
+### :wrench: Configs
+
+* **env-react:** extend with 'rules/typescript' ([a581beb](https://github.com/stackr23/config-eslint/commit/a581beb26242523afd61df1b864dad49e44d80b4))
+* **env-react:** remove duplicate extend of `@typescript-eslint/eslint-recommended` ([853db8c](https://github.com/stackr23/config-eslint/commit/853db8c4be713e325dfe12e37be1a668ec4c0be1))
+* **rule:** set `no-return-await` to 'warn' ([e7cabf1](https://github.com/stackr23/config-eslint/commit/e7cabf15e0a05e7ecb13c00b54d52c9c90422d8d))
+* **rules:** add `rules/typescript` ([5d80c58](https://github.com/stackr23/config-eslint/commit/5d80c589812d914e9da2f294aca8cea1c046ed21))
+* **rules:** change `no-var-requires` ([797e1c5](https://github.com/stackr23/config-eslint/commit/797e1c5756f9c7db2402b5e2b93c0fb59a8e3dde))
+* **rules:** change non-critical rules to 'warn' ([7f314ea](https://github.com/stackr23/config-eslint/commit/7f314eab37cd0199f06a568981cd4197f0dcdbd7))
+* **rules:** remove deprecated TS rules ([8e61a3b](https://github.com/stackr23/config-eslint/commit/8e61a3b6b1d73bd1bcd364dd067a9613495edfe5))
+* **tsconfig:** `allowJs: true` ([61617fa](https://github.com/stackr23/config-eslint/commit/61617fa8fff5061c4e3c9c57f266f34ad02c35a7))
+* **tsconfig:** add `paths` mapping ([0b20fec](https://github.com/stackr23/config-eslint/commit/0b20fec7075f8de7081fae5469ece6fac28f936d))
+* use `@babel/eslint-parser` instead of `babel-eslint` ([d9fa81b](https://github.com/stackr23/config-eslint/commit/d9fa81bcbdf4787eb1c68a01bd75fb10f5c401bd))
+
 ## [2.0.2](https://github.com/stackr23/config-eslint/compare/v2.0.1...v2.0.2) (2021-09-09)
 
 
