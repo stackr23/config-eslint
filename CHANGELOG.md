@@ -4,6 +4,24 @@
 
 
 
+## [2.0.4](https://github.com/stackr23/config-eslint/compare/v2.0.3...v2.0.4) (2021-09-20)
+
+
+### :wrench: Configs
+
+* add `jest` plugin to node/react env ([e4913b9](https://github.com/stackr23/config-eslint/commit/e4913b93175404603d288f407cbbe05de390f891))
+* add babel config for eslint ([bf86a60](https://github.com/stackr23/config-eslint/commit/bf86a60ba5e05320b7d0fc4383190bb9f6c1dd6b))
+* **npm:** set babels targets to `"esmodules": true` ([ca3592c](https://github.com/stackr23/config-eslint/commit/ca3592caf228c1cf88de50b454965ac24a2ce5cf))
+* **rules-react:** set `prop-types` and `display-name` to 'warn' ([d663952](https://github.com/stackr23/config-eslint/commit/d66395284abbeafbd5b49d461271ad4327abe94c))
+* **rules-ts:** set `react/prop-types` to `off` ([b45c1dd](https://github.com/stackr23/config-eslint/commit/b45c1ddbdfa5f6689d326cf141af6f021496280a))
+* **rules:** add various typescript rules ([1616da1](https://github.com/stackr23/config-eslint/commit/1616da1d4151c0defe555f015d4da4fff8cd802e))
+* **tsconfig:** add `"strictNullChecks": true` ([60046e4](https://github.com/stackr23/config-eslint/commit/60046e461e8a2a1ca8fcbd9f14d913704616ecfb))
+
+
+### :package: Dependencies
+
+* add `react` for eslint-plugin-detect ([26f2bc6](https://github.com/stackr23/config-eslint/commit/26f2bc69ff02987c3d3bb0a363a83b4bcd56eaff))
+
 ## [2.0.3](https://github.com/stackr23/config-eslint/compare/v2.0.2...v2.0.3) (2021-09-13)
 
 
