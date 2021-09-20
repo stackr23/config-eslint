@@ -4,9 +4,10 @@ module.exports = {
   env: {
     node:    true,
     es6:     false,
-    browser: false,
+    browser: true,
     mocha:   true,
     jest:    true,
+    'jest/globals': true,
   },
   parser:        '@babel/eslint-parser',
   parserOptions: {
@@ -37,7 +38,7 @@ module.exports = {
     global:  'readonly',
     process: 'readonly',
   },
-  plugins:   [ 'promise', 'node', 'import' ],
+  plugins:   [ 'jest', 'promise', 'node', 'import' ],
   'extends': [
     require.resolve('../env/browser.js'),
     // RULES
