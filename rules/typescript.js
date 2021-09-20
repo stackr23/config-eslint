@@ -38,12 +38,14 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'warn',
     '@typescript-eslint/prefer-nullish-coalescing':              'warn',
 
-    // FOR ESLINT-PLUGIN-UNUSED-IMPORTS
-    'no-unused-vars':                    'off',
-    '@typescript-eslint/no-unused-vars': 'off',
-    'unused-imports/no-unused-imports':  'error',
-    'unused-imports/no-unused-vars':     [ 'warn', {
-      vars: 'all', varsIgnorePattern: 'React|styles|cx', args: 'after-used', argsIgnorePattern: 'e|err',
-    }],
+    // FOR ESLINT-PLUGIN-UNUSED-IMPORTS // TODO
+    // 'no-unused-vars':                    'off',
+    // '@typescript-eslint/no-unused-vars': 'off',
+    // 'unused-imports/no-unused-imports':  'error',
+    // 'unused-imports/no-unused-vars':     [ 'warn', {
+    //   vars: 'all', varsIgnorePattern:    'React|styles|cx', args: 'after-used', argsIgnorePattern: 'e|err',
+    // }],
+    // REACT RULES FOR TYPESCRIPT
+    'react/prop-types':                  'off', // use TS types/Interfaces
   },
-};
+}
