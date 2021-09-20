@@ -2,11 +2,11 @@ const CONSTANTS = require('../utils/constants')
 
 module.exports = {
   env: {
-    node:    true,
-    es6:     false,
-    browser: true,
-    mocha:   true,
-    jest:    true,
+    node:           true,
+    es6:            false,
+    browser:        true,
+    mocha:          true,
+    jest:           true,
     'jest/globals': true,
   },
   parser:        '@babel/eslint-parser',

@@ -46,6 +46,6 @@ module.exports = {
     //   vars: 'all', varsIgnorePattern:    'React|styles|cx', args: 'after-used', argsIgnorePattern: 'e|err',
     // }],
     // REACT RULES FOR TYPESCRIPT
-    'react/prop-types':                  'off', // use TS types/Interfaces
+    'react/prop-types': 'off', // use TS types/Interfaces
   },
 }
