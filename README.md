@@ -1,12 +1,21 @@
 # @stackr23/config-eslint
 
+![Test and Lint](https://github.com/stackr23/config-eslint/actions/workflows/test_and_lint.yml/badge.svg)
+[![NPM Release](https://img.shields.io/npm/v/%40stackr23%2Fconfig-eslint.svg?style=flat)](https://www.npmjs.com/package/%40viewar%2Fconfig-eslint) [![Conventional Commits](https://img.shields.io/badge/✔-Conventional%20Commits-blue.svg)](https://conventionalcommits.org) [![Semantic Versioning](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-blue.svg)](https://github.com/semantic-release/semantic-release)
+
+<!-- badge-urls -->
+
+[semantic-img]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-blue.svg
+[semantic-url]: https://semver.org/
+
+<!-- /badge-urls -->
+
 - [Installation](#installation)
 - [Configuration](#configuration)
   - [NPM Lint Script](#npm-lint-script)
-  - [Integration (VsCode)](#integration-vscode)
+  - [DotFiles](#dotfiles)
+  - [VsCode Integration](#vscode-integration)
   - [Import Resolvers](#import-resolvers)
-    - [Webpack Resolver](#webpack-resolver)
-    - [Node Resolver](#node-resolver)
 
 ## Installation
 
@@ -20,34 +29,36 @@ _includes all eslint and prettier related plugins and shared configs_
 
 ## Configuration
 
-**EsLint DotFile** (_use **either** JS or JSON_)
+### NPM Lint Script
+
+`eslint --fix . --quiet --format pretty && prettier ./**/*.{css,scss,md,json,yml} --write`
+
+### DotFiles
+
+**EsLint** (_use **either** JS or JSON_)
 
 ```js
 // NodeJS - {workspace}/.eslintrc.js
 module.exports = { extends: [require.resolve('@stackr23/config-eslint')] }
 // JSON - {workspace}/.eslintrc
-{ "extends": ["./node_modules/@stackr23/config-eslint"] } 
+{ "extends": ["./node_modules/@stackr23/config-eslint"] }
 ```
 
-**Prettier DotFile**
+**Prettier** _(optional for scss, md, json and yml)_
 
 ```js
 // {workspace}/prettier.config.js
 module.exports = require('@stackr23/config-eslint/prettier.config.js')
 ```
 
-### NPM Lint Script
-
-`eslint --fix . --quiet --format pretty && prettier ./**/*.{css,scss,md,json,yml} --write`
-
-### Integration (VsCode)
+### VsCode Integration
 
 **install extensions:**
 
 - "[dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)" - official EsLint Extension from Microsoft
 - "[esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)" - official Prettier Extension from Prettier
 
-**JSON Config** - __'{workspace}/.vscode/settings.json'__ or global as [User Settings](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)
+**JSON Config** - **'{workspace}/.vscode/settings.json'** or global as [User Settings](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)
 
 ```javascript
 {
@@ -100,7 +111,8 @@ module.exports = require('@stackr23/config-eslint/prettier.config.js')
 > enables absolute import paths for `eslint-plugin-import`  
 > like `import Header from 'components/Header'`
 
-#### Webpack Resolver
+**Webpack Resolver**
+
 > which is applied to the default env 'react'
 
 - **uses '[tsconfig-paths-webpack-plugin](https://github.com/dividab/tsconfig-paths-webpack-plugin#readme)'** to resolve import paths  
@@ -128,7 +140,8 @@ module.exports = require('@stackr23/config-eslint/prettier.config.js')
   - This config will also be used by '[@stackr23/webpack](https://github.com/stackr23/webpack)'
   - for more information see [webpack's resolve config](https://webpack.js.org/configuration/resolve/)
 
-#### Node Resolver
+**Node Resolver**
+
 > applied to env 'browser' and 'node'
 
 ```javascript
