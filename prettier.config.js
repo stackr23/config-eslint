@@ -9,12 +9,4 @@ module.exports = {
   bracketSpacing: true,
   proseWrap:      'preserve',
   quoteProps:     'as-needed',
-  overrides:      [
-    {
-      files:   '*.{js,jsx}',
-      options: {
-        parser: 'babel',
-      },
-    },
-  ],
 }
