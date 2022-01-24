@@ -17,20 +17,6 @@
   },
   "author": "Stefan Friedl <stefan_friedl@gmx.at>",
   "license": "MIT",
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "modules": "commonjs",
-          "targets": {
-            "esmodules": true
-          }
-        }
-      ],
-      "@babel/preset-react"
-    ]
-  },
   "engines": {
     "node": ">=10.0.0"
   },

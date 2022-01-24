@@ -1,6 +1,7 @@
-// babelRegister needed for import resolver
-require('../utils/babelRegister')
 const getResolveConfigPath = require('../utils/getResolveConfigPath')
+// ? babelRegister needed for import resolver ?
+// require in .eslint.js should be enough
+// require('@babel/register', require('../babel.config'))
 
 module.exports = {
   env: {
