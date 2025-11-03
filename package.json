@@ -47,6 +47,7 @@
     "prettier",
     "vsCode"
   ],
+  "_deleted_dependencies": "eslint-import-resolver-webpack",
   "dependencies": {
     "@babel/core": "^7.15.5",
     "@babel/eslint-parser": "^7.15.4",
@@ -60,7 +61,6 @@
     "eslint-formatter-pretty": "^4.1.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.4.0",
-    "eslint-import-resolver-webpack": "^0.13.1",
     "eslint-module-utils": "^2.6.2",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jest": "^24.4.2",
